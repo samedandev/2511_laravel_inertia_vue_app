@@ -38,3 +38,13 @@
 # Laravel route
 
 > /routes/web.php -> return inertia('Index/Index');
+
+### Routes & Controller
+
+# New Controller
+
+> php artisan make:controller IndexController
+
+### Layouts
+
+> /resources/js/Layouts/MainLayout.vue -> <slot></slot>
