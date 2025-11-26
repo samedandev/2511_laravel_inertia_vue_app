@@ -81,3 +81,18 @@ resolve: async (name) => {
 ### Check code for errors
 
 > package.json -> npm run fix:eslint
+
+### DebugBar
+
+> composer require barryvdh/laravel-debugbar --dev
+
+> .env -> APP_DEBUG=true
+
+# IDE Helper
+
+> https://github.com/barryvdh/laravel-ide-helper
+> composer require barryvdh/laravel-ide-helper --dev
+
+# new \_ide_helper.php File
+
+> php artisan ide-helper:generate
