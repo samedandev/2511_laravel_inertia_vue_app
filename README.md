@@ -147,3 +147,17 @@ resolve: async (name) => {
 ### Delete AND Seed Database
 
 > php artisan migrate:refresh --seed
+
+### DATABASE Autoload
+
+> composer dumpautoload
+
+### Tinker
+
+> php artisan tinker
+
+# exemple Query
+
+> Listing::where('beds', '>', 4)->where('area', '>', 200)->get()
+
+> Listing::where('beds', '>=', 4)->where('area', '>', 200)->orderBy('price', 'desc')->first()
