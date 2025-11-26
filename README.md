@@ -161,3 +161,15 @@ resolve: async (name) => {
 > Listing::where('beds', '>', 4)->where('area', '>', 200)->get()
 
 > Listing::where('beds', '>=', 4)->where('area', '>', 200)->orderBy('price', 'desc')->first()
+
+### Fillable data
+
+> Listing.php -> protected $fillable = ['beds', 'baths', 'area', 'city', 'code', 'street', 'street_nr', 'price'];
+
+# tinker test
+
+```
+Listing:: create([
+  'beds' => 2, 'baths' => 2, 'area' => 100, 'city' => 'North', 'street' => 'Tinker st', 'street_nr' => 20, 'code' => 'TS', 'price' => 200_000
+])
+```
