@@ -62,3 +62,18 @@ export default {
 };
 </script>
 ```
+
+### Default Layouts
+
+> /resources/js/app.js
+
+```
+resolve: async (name) => {
+        const pages = import.meta.glob("./Pages/**/*.vue", { eager: true });
+        const page = await pages[`./Pages/${name}.vue`];
+        // load default layout if other doesn't exist
+        page.default.layout = page.default.layout || MainLayout;
+
+        return page;
+    }
+```
