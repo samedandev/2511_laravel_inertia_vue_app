@@ -48,3 +48,17 @@
 ### Layouts
 
 > /resources/js/Layouts/MainLayout.vue -> <slot></slot>
+
+### Persistent Layouts
+
+> Show.vue, Index.vue
+
+```
+<script>
+import MainLayout from "../../Layouts/MainLayout.vue";
+
+export default {
+    layout: MainLayout,
+};
+</script>
+```
