@@ -1,8 +1,8 @@
 <template>
-    <div>Show</div>
-    <Link href="/">Show INDEX </Link>
+  <div>Show</div>
+  <Link href="/">Show INDEX </Link>
 </template>
 
 <script setup>
-import { Link } from "@inertiajs/vue3";
+import { Link } from '@inertiajs/vue3'
 </script>

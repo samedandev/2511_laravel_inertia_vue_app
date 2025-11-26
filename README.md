@@ -77,3 +77,7 @@ resolve: async (name) => {
         return page;
     }
 ```
+
+### Check code for errors
+
+> package.json -> npm run fix:eslint
