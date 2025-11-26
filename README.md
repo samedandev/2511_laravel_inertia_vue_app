@@ -106,3 +106,44 @@ resolve: async (name) => {
 > php artisan ide-helper:generate
 
 > ![DebugBar](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/01.jpg)
+
+### DATABASE
+
+# Model + Migration
+
+> php artisan make:model Listing -m
+
+> php artisan migrate
+
+# Add columns to Migration
+
+> php artisan make:migration add_fields_to_listings_table
+
+# Check status of Migrations
+
+> php artisan migrate:status
+
+# Rollback migration
+
+> php artisan migrate:rollback
+
+### FACTORIES data
+
+> php artisan make:factory ListingFactory
+
+# ListingFactory.php
+
+> 'beds' => fake()->numberBetween(1, 7)
+
+# Faker
+
+> DatabaseSeeder.php ->
+> php artisan db:seed
+
+### Delete Database
+
+> php artisan migrate:refresh
+
+### Delete AND Seed Database
+
+> php artisan migrate:refresh --seed
