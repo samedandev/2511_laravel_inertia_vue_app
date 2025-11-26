@@ -2,6 +2,14 @@
 
 > https://www.udemy.com/course/master-laravel-6-with-vuejs-fullstack-development/learn/lecture/43171754#overview
 
+# Source Git
+
+> https://github.com/piotr-jura-udemy/master-laravel-vue-fullstack
+
+# This Git
+
+> https://github.com/samedandev/2511_laravel_inertia_vue_app
+
 ### Install Laravel
 
 > composer create-project "laravel/laravel:^10.0" example-app
@@ -96,3 +104,5 @@ resolve: async (name) => {
 # new \_ide_helper.php File
 
 > php artisan ide-helper:generate
+
+> ![DebugBar](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/01.jpg)
