@@ -173,3 +173,30 @@ Listing:: create([
   'beds' => 2, 'baths' => 2, 'area' => 100, 'city' => 'North', 'street' => 'Tinker st', 'street_nr' => 20, 'code' => 'TS', 'price' => 200_000
 ])
 ```
+
+### ListingController
+
+> php artisan make:controller --resource ListingController
+
+# Available routes
+
+> web.php -> Route::resource('listing', ListingController::class)->only('index', 'show');
+
+> ![Routes](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/02.jpg)
+
+## Listings vues
+
+> /resources/js/Pages/Listing/ Index.vue + Show.vue
+
+### Listings for loop
+
+```
+<template>
+    <div v-for="listing in listings" :key="listing.id">
+        <Link :href="`/listing/${listing.id}`">
+            {{ listing.street }} No {{ listing.street_nr }}, {{ listing.city }},
+            {{ listing.price }}
+        </Link>
+    </div>
+</template>
+```
