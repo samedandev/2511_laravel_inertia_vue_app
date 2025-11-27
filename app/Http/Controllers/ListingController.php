@@ -21,7 +21,7 @@ class ListingController extends Controller
      */
     public function create()
     {
-        //
+        return inertia('Listing/Create');
     }
 
     /**
@@ -29,7 +29,11 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+        Listing::create($request->all()); // no sanitation
+
+        return redirect()->route('listing.index')
+            ->with('success', 'Listing added successfully');
     }
 
     /**

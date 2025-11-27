@@ -200,3 +200,17 @@ Listing:: create([
     </div>
 </template>
 ```
+
+### Add new Listing Form
+
+# Form template
+
+> /resources/js/Pages/Listing/Create.vue
+
+# ListingController return page
+
+> public function create()
+
+# ListingController save form info
+
+> public function store(Request $request)
