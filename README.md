@@ -234,3 +234,9 @@ public function share(Request $request): array
 # Message shared from controller
 
 > ListingController.php -> store() ... with('success', 'xyz')
+
+> ![Success](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/03.jpg)
+
+### Computed properties Vue
+
+> MainLayout.vue -> const flashSuccess = computed(() => page.props.flash.success);
