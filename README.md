@@ -239,4 +239,16 @@ public function share(Request $request): array
 
 ### Computed properties Vue
 
+> https://vuejs.org/guide/essentials/computed
+
 > MainLayout.vue -> const flashSuccess = computed(() => page.props.flash.success);
+
+### Laravel Form validation
+
+# Merge returned form data with errors
+
+> ListingController -> store(.. $request->validate([...]))
+
+# FrontEnd
+
+> Create.vue -> <div v-if="form.errors.beds">{{ form.errors.beds }}</div>
