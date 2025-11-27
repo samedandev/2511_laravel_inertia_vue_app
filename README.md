@@ -214,3 +214,23 @@ Listing:: create([
 # ListingController save form info
 
 > public function store(Request $request)
+
+### Middleware / SHARE Data across app
+
+> /app/Http/Middleware/HandleInertiaRequest.php
+
+```
+public function share(Request $request): array
+    {
+        return [
+            ...parent::share($request),
+            'flash' => [
+                'success' => $request->session()->get('success')
+            ]
+        ];
+    }
+```
+
+# Message shared from controller
+
+> ListingController.php -> store() ... with('success', 'xyz')
