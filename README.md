@@ -252,3 +252,21 @@ public function share(Request $request): array
 # FrontEnd
 
 > Create.vue -> <div v-if="form.errors.beds">{{ form.errors.beds }}</div>
+
+### Add/EDIT Listing form
+
+# edit Form template
+
+> resources/js/Pages/Layout/Edit.vue
+
+# delete Button
+
+> resources/js/Pages/Layout/Index.vue
+
+```
+<div>
+            <Link :href="`/listing/${listing.id}`" method="DELETE" as="button"
+                >Delete</Link
+            >
+        </div>
+```
