@@ -270,3 +270,21 @@ public function share(Request $request): array
             >
         </div>
 ```
+
+### ZIGGY
+
+> composer require tightenco/ziggy
+
+# Links FrontEnd to vendor folder
+
+> vite.config.js
+
+```
+resolve: {
+        alias: {
+            ziggy: path.resolve("vendor/tightenco/ziggy/dist/vue.es.js"),
+        },
+    },
+```
+
+> app.blade.php -> @routes in head
