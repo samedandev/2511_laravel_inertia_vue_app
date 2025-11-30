@@ -302,3 +302,9 @@ resolve: {
 > https://vueuse.org/core/useDark/#usedark
 
 > ![DarkMode](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/04.jpg)
+
+### Added UI Components
+
+> /resources/js/Components/ListingSpace.vue
+> /resources/js/Components/ListingAddress.vue
+> /resources/js/Components/UI/Box.vue
