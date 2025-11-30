@@ -288,3 +288,11 @@ resolve: {
 ```
 
 > app.blade.php -> @routes in head
+
+### Taillwind Css
+
+> https://v3.tailwindcss.com/docs/guides/laravel
+
+> npm i -d tailwindcss postcss autoprefixer
+> npm install tailwindcss @tailwindcss/vite --legacy-peer-deps
+> npx tailwindcss init -p

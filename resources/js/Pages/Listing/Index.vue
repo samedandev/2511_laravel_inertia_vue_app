@@ -1,4 +1,5 @@
 <template>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <div v-for="listing in listings" :key="listing.id">
         <div>
             <!-- <Link :href="`/listing/${listing.id}`"> -->

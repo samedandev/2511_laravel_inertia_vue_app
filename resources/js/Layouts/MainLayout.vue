@@ -19,7 +19,7 @@
 
 <script setup>
 import { Link, usePage } from "@inertiajs/vue3";
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
 // const x = ref(0);
 // const y = computed(() => x.value * 2);

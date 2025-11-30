@@ -6,11 +6,13 @@
 
         <title>Laravel</title>
         @routes
+        @vite('resources/css/app.css')
         @vite('resources/js/app.js')
+        {{-- <link href="@/resources/css/app.css" rel="stylesheet"> --}}
         @inertiaHead
 
     </head>
-    <body>
+    <body class="bg-white dark:bg-gray-900">
         @inertia
     </body>
 </html>
