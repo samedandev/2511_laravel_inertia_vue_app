@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    // darkMode: "selector",
+    darkMode: "class",
     content: [
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./resources/**/*.vue",
+        "./storage/framework/views/*.php",
+        "./resources/views/**/*.blade.php",
+        "./resources/js/**/*.vue",
     ],
     theme: {
         extend: {},

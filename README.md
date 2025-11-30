@@ -296,3 +296,9 @@ resolve: {
 > npm i -d tailwindcss postcss autoprefixer
 > npm install tailwindcss @tailwindcss/vite --legacy-peer-deps
 > npx tailwindcss init -p
+
+### Talwind Dark Mode
+
+> https://vueuse.org/core/useDark/#usedark
+
+> ![DarkMode](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/04.jpg)
