@@ -308,3 +308,9 @@ resolve: {
 > /resources/js/Components/ListingSpace.vue
 > /resources/js/Components/ListingAddress.vue
 > /resources/js/Components/UI/Box.vue
+
+### Named Slots
+
+> Show.vue -> <template #header> Offer </template>
+
+> Box.vue -> <slot name="header" />
