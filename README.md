@@ -313,4 +313,16 @@ resolve: {
 
 > Show.vue -> <template #header> Offer </template>
 
-> Box.vue -> <slot name="header" />
+# Box.vue
+
+> <slot name="header" />
+
+# Show.vue
+
+> <template #header> Offer </template>
+
+### @layer @apply Tailwind Directives
+
+> app.css
+
+> ![Errors classes](https://github.com/samedandev/2511_laravel_inertia_vue_app/blob/main/_printscreens/05.jpg)
